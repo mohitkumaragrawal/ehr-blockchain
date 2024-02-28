@@ -3,7 +3,7 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link
+  Link,
 } from "@nextui-org/react";
 import WalletBalance from "./WalletBalance";
 
@@ -23,6 +23,11 @@ export default function MyNavBar() {
         <NavbarItem>
           <Link color="foreground" href="/doctor">
             Doctors
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/add-doctor">
+            Add Doctor
           </Link>
         </NavbarItem>
         <WalletBalance />

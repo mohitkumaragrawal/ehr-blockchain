@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MyNavBar from "./components/NavBar";
 import Doctor from "./pages/Doctor";
+import AddDoctor from "./pages/AddDoctor";
 
 const router = createBrowserRouter([
   {
@@ -24,13 +25,19 @@ const router = createBrowserRouter([
     path: "/doctor",
     element: <Doctor />,
   },
+  {
+    path: "/add-doctor",
+    element: <AddDoctor />,
+  },
 ]);
 
 function App() {
   return (
     <NextUIProvider>
       <MyNavBar />
-      <RouterProvider router={router} />
+      <div className="p-2">
+        <RouterProvider router={router} />
+      </div>
     </NextUIProvider>
   );
 }
